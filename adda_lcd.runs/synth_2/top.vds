@@ -1,0 +1,640 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 25 23:46:48 2022
+# Process ID: 12932
+# Current directory: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/top.vds
+# Journal file: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/BaiduNetDiskdownload/adda_hdmi_test/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 473.082 ; gain = 104.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/sin_rom_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (4#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/tri_rom_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'tri_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (5#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/saw_rom_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'saw_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:124]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element active_x_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (6#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (7#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (8#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (9#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ad9280_sample' (10#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:179]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (11#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (12#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 529.977 ; gain = 161.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 529.977 ; gain = 161.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 529.977 ; gain = 161.180
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display/buffer'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display/buffer'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll/adda_pll_in_context.xdc] for cell 'adda_pll'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll/adda_pll_in_context.xdc] for cell 'adda_pll'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom/saw_rom_in_context.xdc] for cell 'saw_rom'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom/saw_rom_in_context.xdc] for cell 'saw_rom'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom/tri_rom_in_context.xdc] for cell 'tri_rom'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom/tri_rom_in_context.xdc] for cell 'tri_rom'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom/sin_rom_in_context.xdc] for cell 'sin_rom'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom/sin_rom_in_context.xdc] for cell 'sin_rom'
+Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+Finished Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.707 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.707 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 863.707 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display/buffer' at clock pin 'clkb' is different from the actual clock period '13.474', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 17).
+Applied set_property DONT_TOUCH = true for wav_display/buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rgb2dvi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for adda_pll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for saw_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tri_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sin_rom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad9280_sample'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "wait_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              001 |                              000
+                S_SAMPLE |                              010 |                              001
+                  S_WAIT |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ad9280_sample'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 6     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module timing_gen_xy 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module grid_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+Module ad9280_sample 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module wav_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar/v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar/h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ad9280_sample/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ad9280_sample/wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ad9280_sample/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[0]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[1]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[2]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[3]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[4]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[5]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[6]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[7]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[8]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[9]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[10]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[11]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[12]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[13]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[14]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[15]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[16]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[17]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[18]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[19]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[20]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[21]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d0_reg[22]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\grid_display/timing_gen_xy/i_data_d0_reg[23] )
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[0]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[1]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[2]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[3]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[4]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[5]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[6]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[7]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[8]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[9]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[10]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[11]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[12]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[13]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[14]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[15]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[16]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[17]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[18]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[19]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[20]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[21]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[22]' (FD) to 'grid_display/timing_gen_xy/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/timing_gen_xy/i_data_d1_reg[23]' (FD) to 'grid_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\grid_display/timing_gen_xy/i_data_d0_reg[23] )
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[0]' (FD) to 'grid_display/v_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[1]' (FD) to 'grid_display/v_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[2]' (FD) to 'grid_display/v_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[3]' (FD) to 'grid_display/v_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[4]' (FD) to 'grid_display/v_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[5]' (FD) to 'grid_display/v_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[6]' (FD) to 'grid_display/v_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[7]' (FD) to 'grid_display/v_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[8]' (FD) to 'grid_display/v_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[9]' (FD) to 'grid_display/v_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[10]' (FD) to 'grid_display/v_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[11]' (FD) to 'grid_display/v_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[12]' (FD) to 'grid_display/v_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[13]' (FD) to 'grid_display/v_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[14]' (FD) to 'grid_display/v_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[15]' (FD) to 'grid_display/v_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[16]' (FD) to 'grid_display/v_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[17]' (FD) to 'grid_display/v_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[18]' (FD) to 'grid_display/v_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[19]' (FD) to 'grid_display/v_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[20]' (FD) to 'grid_display/v_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'grid_display/v_data_reg[21]' (FD) to 'grid_display/v_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[0]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[1]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[2]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[3]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[4]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[5]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[6]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[7]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[8]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[9]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[10]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[11]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[12]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[13]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[14]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[15]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[16]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[17]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[18]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[19]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[20]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d0_reg[21]' (FD) to 'wav_display/timing_gen_xy/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[0]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[1]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[2]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[3]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[4]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[5]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[6]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[7]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[8]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[19]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 863.707 ; gain = 494.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'rgb2dvi/SerialClk' to pin 'video_pll/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'rgb2dvi/PixelClk' to 'i_5/wav_display/timing_gen_xy/y_cnt_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'adda_pll/clk_out1' to pin 'adda_pll/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'adda_pll/clk_out2' to pin 'adda_pll/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll/clk_out1' to pin 'video_pll/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll/clk_out2' to pin 'video_pll/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 863.707 ; gain = 494.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | wav_display/timing_gen_xy/hs_d1_reg         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | wav_display/timing_gen_xy/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_pll     |         1|
+|2     |adda_pll      |         1|
+|3     |sin_rom       |         1|
+|4     |tri_rom       |         1|
+|5     |saw_rom       |         1|
+|6     |rgb2dvi_0     |         1|
+|7     |dpram2048x8   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |adda_pll    |     1|
+|2     |dpram2048x8 |     1|
+|3     |rgb2dvi_0   |     1|
+|4     |saw_rom     |     1|
+|5     |sin_rom     |     1|
+|6     |tri_rom     |     1|
+|7     |video_pll   |     1|
+|8     |CARRY4      |    33|
+|9     |LUT1        |    15|
+|10    |LUT2        |    50|
+|11    |LUT3        |    76|
+|12    |LUT4        |    24|
+|13    |LUT5        |    37|
+|14    |LUT6        |    43|
+|15    |SRL16E      |     3|
+|16    |FDCE        |   132|
+|17    |FDPE        |     1|
+|18    |FDRE        |    50|
+|19    |IBUF        |    18|
+|20    |OBUF        |    11|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------------+----------------+------+
+|      |Instance          |Module          |Cells |
++------+------------------+----------------+------+
+|1     |top               |                |   540|
+|2     |  ad9280_sample   |ad9280_sample   |   123|
+|3     |  color_bar       |color_bar       |    80|
+|4     |  grid_display    |grid_display    |   104|
+|5     |    timing_gen_xy |timing_gen_xy_0 |    82|
+|6     |  wav_display     |wav_display     |   134|
+|7     |    timing_gen_xy |timing_gen_xy   |    95|
++------+------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 875.586 ; gain = 173.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 878.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+167 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 878.020 ; gain = 521.547
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 878.020 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 25 23:47:23 2022...

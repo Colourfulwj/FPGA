@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 20 20:40:14 2022
+# Process ID: 19452
+# Current directory: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/saw_rom_synth_1
+# Command line: vivado.exe -log saw_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source saw_rom.tcl
+# Log file: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/saw_rom_synth_1/saw_rom.vds
+# Journal file: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/saw_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source saw_rom.tcl -notrace

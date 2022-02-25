@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Feb 23 17:59:06 2022
+| Host         : Colourful running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      9 |            2 |
+|     10 |            1 |
+|     11 |            3 |
+|     12 |            3 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             115 |           36 |
+| No           | No                    | Yes                    |              54 |           19 |
+| No           | Yes                   | No                     |              62 |           23 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              79 |           20 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |                 Enable Signal                 |                         Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++--------------------------+-----------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|  video_pll/inst/clk_out1 |                                               | grid_display/timing_gen_xy/SR[0]                                 |                3 |              9 |
+|  adda_pll/inst/clk_out2  |                                               |                                                                  |                3 |              9 |
+|  video_pll/inst/clk_out1 |                                               | rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |
+|  video_pll/inst/clk_out1 |                                               | wav_display/timing_gen_xy/SR[0]                                  |                2 |             11 |
+|  adda_pll/inst/clk_out1  |                                               | ad9280_sample/AR[0]                                              |                5 |             11 |
+|  adda_pll/inst/clk_out1  | ad9280_sample/FSM_onehot_state_reg[1]_0       | ad9280_sample/AR[0]                                              |                3 |             11 |
+|  video_pll/inst/clk_out1 | color_bar/v_cnt_1                             | ad9280_sample/AR[0]                                              |                4 |             12 |
+|  video_pll/inst/clk_out1 | grid_display/timing_gen_xy/y_cnt[0]_i_1_n_0   | ad9280_sample/AR[0]                                              |                3 |             12 |
+|  video_pll/inst/clk_out1 | wav_display/timing_gen_xy/y_cnt[0]_i_1__0_n_0 | ad9280_sample/AR[0]                                              |                3 |             12 |
+|  video_pll/inst/clk_out1 |                                               | rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                     |               15 |             32 |
+|  adda_pll/inst/clk_out1  | ad9280_sample/wait_cnt_0                      | ad9280_sample/AR[0]                                              |                7 |             32 |
+|  video_pll/inst/clk_out1 |                                               | ad9280_sample/AR[0]                                              |               14 |             43 |
+|  video_pll/inst/clk_out1 |                                               |                                                                  |               33 |            109 |
++--------------------------+-----------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+
+

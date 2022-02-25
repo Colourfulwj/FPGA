@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 20 20:26:29 2022
+# Process ID: 23284
+# Current directory: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40644 E:\BaiduNetDiskdownload\19_an108_adda_hdmi_test\an108_adda_lcd.xpr
+# Log file: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/vivado.log
+# Journal file: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.xpr
+INFO: [Project 1-313] Project file moved from 'E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 954.438 ; gain = 98.914
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sawtooth_wave.coe' provided. It will be converted relative to IP Instance files '../../../../an108_adda_lcd.srcs/sources_1/sawtooth_wave.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name saw_rom -dir e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {saw_rom} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sawtooth_wave.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips saw_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'saw_rom' to 'saw_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sawtooth_wave.coe' provided. It will be converted relative to IP Instance files '../../sawtooth_wave.coe'
+generate_target {instantiation_template} [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'saw_rom'...
+generate_target all [get_files  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'saw_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'saw_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'saw_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'saw_rom'...
+export_ip_user_files -of_objects [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.xci]
+launch_runs -jobs 6 saw_rom_synth_1
+[Sun Feb 20 20:40:11 2022] Launched saw_rom_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/saw_rom_synth_1/runme.log
+export_simulation -of_objects [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.xci] -directory E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/triangular_wave.coe' provided. It will be converted relative to IP Instance files '../../../../an108_adda_lcd.srcs/sources_1/triangular_wave.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name tri_rom -dir e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {tri_rom} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/triangular_wave.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips tri_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'tri_rom' to 'tri_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/triangular_wave.coe' provided. It will be converted relative to IP Instance files '../../triangular_wave.coe'
+generate_target {instantiation_template} [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'tri_rom'...
+generate_target all [get_files  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'tri_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'tri_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'tri_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'tri_rom'...
+export_ip_user_files -of_objects [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.xci]
+launch_runs -jobs 6 tri_rom_synth_1
+[Sun Feb 20 20:41:06 2022] Launched tri_rom_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/tri_rom_synth_1/runme.log
+export_simulation -of_objects [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.xci] -directory E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sin512.coe' provided. It will be converted relative to IP Instance files '../../../../an108_adda_lcd.srcs/sources_1/sin512.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name sin_rom -dir e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {sin_rom} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sin512.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips sin_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'sin_rom' to 'sin_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sin512.coe' provided. It will be converted relative to IP Instance files '../../sin512.coe'
+generate_target {instantiation_template} [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sin_rom'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sin_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sin_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'sin_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sin_rom'...
+export_ip_user_files -of_objects [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.xci]
+launch_runs -jobs 6 sin_rom_synth_1
+[Sun Feb 20 20:42:10 2022] Launched sin_rom_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/sin_rom_synth_1/runme.log
+export_simulation -of_objects [get_files e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.xci] -directory E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tfgg484-2
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1295.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'da_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/da_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'da_rom' (3#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/da_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (4#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+ERROR: [Synth 8-685] variable 'sin_data' should not be used in output port connection [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:117]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+9 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tfgg484-2
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1295.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'da_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/da_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'da_rom' (3#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/da_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (4#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (5#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (6#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (7#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (8#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (9#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (10#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ad9280_sample' (11#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:185]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (12#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (13#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:2]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.dcp' for cell 'adda_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.dcp' for cell 'da_rom_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.dcp' for cell 'sin_rom_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.dcp' for cell 'tri_rom_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.dcp' for cell 'saw_rom_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_data_p[0]' of a differential pair cannot be placed on a negative package pin 'V20' (IOBS). [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:13]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_data_p[1]' of a differential pair cannot be placed on a negative package pin 'T20' (IOBS). [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:21]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G19' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J18' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L17' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:33]
+Finished Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll_m0/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1452.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1472.336 ; gain = 176.883
+44 Infos, 3 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1472.336 ; gain = 176.883
+place_ports {mode[0]} G22
+place_ports {mode[1]} D22
+set_property IOSTANDARD LVCMOS33 [get_ports [list {mode[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {mode[1]}]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1472.336 ; gain = 0.000
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Sun Feb 20 20:54:13 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 6
+[Sun Feb 20 20:54:57 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Feb 20 20:56:11 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1472.336 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+close_hw
+export_ip_user_files -of_objects  [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci] -no_script -reset -force -quiet
+remove_files  -fileset da_rom E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci
+INFO: [Project 1-386] Moving file 'E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci' from fileset 'da_rom' to fileset 'sources_1'.
+file delete -force E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Sun Feb 20 22:11:05 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 6
+[Sun Feb 20 22:12:48 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Feb 20 22:14:13 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 2486.211 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210241320090.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+close_hw
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2550.945 ; gain = 8.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (4#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (5#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+ERROR: [Synth 8-91] ambiguous clock in event control [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:255]
+ERROR: [Synth 8-6156] failed synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2590.160 ; gain = 47.582
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Sun Feb 20 22:20:34 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Sun Feb 20 22:23:28 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 6
+[Sun Feb 20 22:24:11 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Sun Feb 20 22:25:37 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2752.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (4#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (5#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element active_x_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (6#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (7#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (8#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (9#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ad9280_sample' (10#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:178]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (11#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/.Xil/Vivado-23284-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (12#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2752.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2752.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2752.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.dcp' for cell 'adda_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.dcp' for cell 'sin_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.dcp' for cell 'tri_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.dcp' for cell 'saw_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display/buffer'
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_data_p[0]' of a differential pair cannot be placed on a negative package pin 'V20' (IOBS). [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:13]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_data_p[1]' of a differential pair cannot be placed on a negative package pin 'T20' (IOBS). [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:21]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G19' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J18' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L17' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:32]
+Finished Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll_m0/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2796.508 ; gain = 47.008
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 20 23:48:54 2022...

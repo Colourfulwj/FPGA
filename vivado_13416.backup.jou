@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 20 17:34:17 2022
+# Process ID: 13416
+# Current directory: E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32876 E:\BaiduNetDiskdownload\course_s1_fpga\19_an108_adda_hdmi_test\an108_adda_lcd.xpr
+# Log file: E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/vivado.log
+# Journal file: E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+set_property flow {Vivado Synthesis 2018} [get_runs synth_1]
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7a35tfgg484-2 [current_project]
+set_property flow {Vivado Implementation 2015} [get_runs impl_2]
+upgrade_ip -srcset adda_pll [get_ips  {adda_pll da_rom dpram2048x8 video_pll}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {adda_pll da_rom dpram2048x8 video_pll}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset rgb2dvi_0 -vlnv digilentinc.com:ip:rgb2dvi:1.3 [get_ips  rgb2dvi_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rgb2dvi_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+generate_target all [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci]
+generate_target all [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+generate_target all [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci]
+generate_target all [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xci]
+generate_target all [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xci]
+launch_runs dpram2048x8_synth_1
+wait_on_run dpram2048x8_synth_1
+launch_runs rgb2dvi_0_synth_1
+wait_on_run rgb2dvi_0_synth_1
+launch_runs da_rom_synth_1
+wait_on_run da_rom_synth_1
+launch_runs adda_pll_synth_1
+wait_on_run adda_pll_synth_1
+launch_runs video_pll_synth_1
+wait_on_run video_pll_synth_1
+synth_design -rtl -name rtl_1
+place_ports rst_n F15
+place_ports sys_clk Y18
+place_ports TMDS_clk_p K4
+place_ports {TMDS_data_p[0]} L3
+place_ports {TMDS_data_p[1]} L5
+place_ports {TMDS_data_p[2]} M3
+place_ports {hdmi_oen[0]} H5
+place_ports ad9708_clk D1
+place_ports {ad9708_data[0]} D16
+place_ports {ad9708_data[1]} E16
+place_ports {ad9708_data[2]} C17
+place_ports {ad9708_data[3]} D17
+place_ports {ad9708_data[4]} B16
+place_ports {ad9708_data[5]} B15
+place_ports {ad9708_data[6]} C15
+place_ports {ad9708_data[7]} C14
+place_ports ad9708_clk D15
+place_ports {ad9280_data[0]} A16
+place_ports {ad9280_data[1]} A15
+place_ports {ad9280_data[2]} A19
+place_ports {ad9280_data[3]} A18
+place_ports {ad9280_data[4]} F14
+place_ports {ad9280_data[5]} F13
+place_ports {ad9280_data[6]} E14
+place_ports {ad9280_data[7]} E13
+place_ports ad9280_clk B13
+set_property target_constrs_file E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs synth_2 -jobs 6
+wait_on_run synth_2
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+set_property -dict [list CONFIG.Coe_File {E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/triangular_wave.coe}] [get_ips da_rom]
+generate_target all [get_files  E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci]
+export_ip_user_files -of_objects [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci] -no_script -sync -force -quiet
+reset_run da_rom_synth_1
+launch_runs -jobs 6 da_rom_synth_1
+export_simulation -of_objects [get_files E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/da_rom/da_rom.xci] -directory E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+wait_on_run synth_2
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/course_s1_fpga/19_an108_adda_hdmi_test/an108_adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

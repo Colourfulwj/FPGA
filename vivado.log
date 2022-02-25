@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 25 22:29:12 2022
+# Process ID: 11572
+# Current directory: E:/BaiduNetDiskdownload/adda_hdmi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3812 E:\BaiduNetDiskdownload\adda_hdmi_test\adda_lcd.xpr
+# Log file: E:/BaiduNetDiskdownload/adda_hdmi_test/vivado.log
+# Journal file: E:/BaiduNetDiskdownload/adda_hdmi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/BaiduNetDiskdownload/adda_hdmi_test/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 824.426 ; gain = 206.488
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run dpram2048x8_synth_1
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Fri Feb 25 22:34:42 2022] Launched dpram2048x8_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/dpram2048x8_synth_1/runme.log
+[Fri Feb 25 22:34:42 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Fri Feb 25 22:38:37 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS2-210241320090" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS2-210241320090" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS2-210241320090" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Load_Init_File {false} CONFIG.Coe_File {no_coe_file_loaded} CONFIG.Fill_Remaining_Memory_Locations {true}] [get_ips dpram2048x8]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Coe_File' from 'no_coe_file_loaded' to 'no_coe_file_loaded' has been ignored for IP 'dpram2048x8'
+generate_target all [get_files  E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dpram2048x8'...
+export_ip_user_files -of_objects [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci] -no_script -sync -force -quiet
+reset_run dpram2048x8_synth_1
+launch_runs -jobs 6 dpram2048x8_synth_1
+[Fri Feb 25 22:45:21 2022] Launched dpram2048x8_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/dpram2048x8_synth_1/runme.log
+export_simulation -of_objects [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci] -directory E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2
+
+launch_runs synth_2 -jobs 6
+[Fri Feb 25 22:45:39 2022] Launched dpram2048x8_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/dpram2048x8_synth_1/runme.log
+[Fri Feb 25 22:45:39 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Fri Feb 25 22:47:18 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Fri Feb 25 22:52:09 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tfgg484-2
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2179.234 ; gain = 76.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/sin_rom_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (4#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/tri_rom_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'tri_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (5#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/saw_rom_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'saw_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:124]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element active_x_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (6#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (7#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (8#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (9#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ad9280_sample' (10#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:179]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (11#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (12#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2220.430 ; gain = 117.812
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2220.430 ; gain = 117.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2220.430 ; gain = 117.812
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.dcp' for cell 'adda_pll'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/sin_rom/sin_rom.dcp' for cell 'sin_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/tri_rom/tri_rom.dcp' for cell 'tri_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/saw_rom/saw_rom.dcp' for cell 'saw_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display/buffer'
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll/inst'
+Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_data_p[0]' of a differential pair cannot be placed on a negative package pin 'V20' (IOBS). [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:13]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_data_p[1]' of a differential pair cannot be placed on a negative package pin 'T20' (IOBS). [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:21]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G19' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J18' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L17' is not a valid site or package pin name. [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc:32]
+Finished Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll/inst'
+Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll/inst'
+Finished Parsing XDC File [e:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2376.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2402.836 ; gain = 300.219
+41 Infos, 7 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2402.836 ; gain = 300.219
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Fri Feb 25 23:06:55 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Fill_Remaining_Memory_Locations {false}] [get_ips dpram2048x8]
+generate_target all [get_files  E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dpram2048x8'...
+export_ip_user_files -of_objects [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci] -no_script -sync -force -quiet
+reset_run dpram2048x8_synth_1
+launch_runs -jobs 6 dpram2048x8_synth_1
+[Fri Feb 25 23:19:32 2022] Launched dpram2048x8_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/dpram2048x8_synth_1/runme.log
+export_simulation -of_objects [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci] -directory E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2
+
+launch_runs synth_2 -jobs 6
+[Fri Feb 25 23:19:50 2022] Launched dpram2048x8_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/dpram2048x8_synth_1/runme.log
+[Fri Feb 25 23:19:50 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Fri Feb 25 23:21:33 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.CLKOUT2_JITTER {192.113}] [get_ips adda_pll]
+generate_target all [get_files  E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'adda_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'adda_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'adda_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'adda_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'adda_pll'...
+export_ip_user_files -of_objects [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xci] -no_script -sync -force -quiet
+reset_run adda_pll_synth_1
+launch_runs -jobs 6 adda_pll_synth_1
+[Fri Feb 25 23:28:19 2022] Launched adda_pll_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/adda_pll_synth_1/runme.log
+export_simulation -of_objects [get_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xci] -directory E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/sim_scripts -ip_user_files_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files -ipstatic_source_dir E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/modelsim} {questa=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/questa} {riviera=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/riviera} {activehdl=E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2
+
+launch_runs synth_2 -jobs 6
+[Fri Feb 25 23:28:38 2022] Launched adda_pll_synth_1...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/adda_pll_synth_1/runme.log
+[Fri Feb 25 23:28:39 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Fri Feb 25 23:29:38 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+reset_run synth_2
+launch_runs synth_2 -jobs 6
+[Fri Feb 25 23:46:46 2022] Launched synth_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+[Fri Feb 25 23:47:34 2022] Launched impl_2...
+Run output will be captured here: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241320090
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/impl_2/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241320090
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 26 00:03:08 2022...
