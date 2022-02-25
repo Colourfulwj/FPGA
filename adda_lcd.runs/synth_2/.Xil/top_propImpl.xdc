@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc rfile:../../../../19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc rfile:../../../../../../../BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y18 [get_ports sys_clk]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

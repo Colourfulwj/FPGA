@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/sin_rom_synth_1'
+HD_PWD='E:/Study/vivado_project/new/FPGA/adda_lcd.runs/sin_rom_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

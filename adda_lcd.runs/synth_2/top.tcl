@@ -17,8 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/incrSyn
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache E:/Study/vivado_project/new/FPGA/.Xil/Vivado-14460-Colourful/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tfgg484-2
@@ -27,21 +26,17 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/wt [current_project]
-set_property parent.project_path E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.xpr [current_project]
+set_property webtalk.parent_dir E:/Study/vivado_project/new/FPGA/adda_lcd.cache/wt [current_project]
+set_property parent.project_path E:/Study/vivado_project/new/FPGA/adda_lcd.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths e:/BaiduNetDiskdownload/adda_hdmi_test/repo [current_project]
+set_property ip_repo_paths e:/Study/vivado_project/new/FPGA/repo [current_project]
 update_ip_catalog
 set_property ip_cache_permissions disable [current_project]
-add_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sin512.coe
-add_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/triangular_wave.coe
-add_files E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sawtooth_wave.coe
-add_files E:/BaiduNetDiskdownload/adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sin8192.coe
-add_files E:/BaiduNetDiskdownload/adda_hdmi_test/an108_adda_lcd.srcs/sources_1/tri9182.coe
-add_files E:/BaiduNetDiskdownload/adda_hdmi_test/an108_adda_lcd.srcs/sources_1/saw8192.coe
-add_files e:/Study/vivado_project/adda_hdmi_test/an108_adda_lcd.srcs/sources_1/sin.coe
+add_files E:/Study/vivado_project/new/FPGA/an108_adda_lcd.srcs/sources_1/sin8192.coe
+add_files E:/Study/vivado_project/new/FPGA/an108_adda_lcd.srcs/sources_1/tri9182.coe
+add_files E:/Study/vivado_project/new/FPGA/an108_adda_lcd.srcs/sources_1/saw8192.coe
 read_verilog -library xil_defaultlib {
   E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v
   E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/video_define.v

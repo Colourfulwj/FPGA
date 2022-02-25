@@ -10,30 +10,30 @@
 
 source top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/BaiduNetDiskdownload/adda_hdmi_test/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Study/vivado_project/new/FPGA/repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top top -part xc7a35tfgg484-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13932 
+INFO: Helper process launched with PID 17480 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 473.082 ; gain = 104.285
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 473.105 ; gain = 104.570
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/video_pll_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/video_pll_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/adda_pll_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/adda_pll_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/sin_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (2#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sin_rom' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/sin_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sin_rom' (3#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/sin_rom_stub.v:6]
 WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'sin_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:110]
-INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/tri_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (4#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (4#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/tri_rom_stub.v:6]
 WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'tri_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:117]
-INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/saw_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (5#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'saw_rom' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/saw_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'saw_rom' (5#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/saw_rom_stub.v:6]
 WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (13) of module 'saw_rom' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:124]
 INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
 	Parameter H_ACTIVE bound to: 16'b0000010100000000 
@@ -74,8 +74,8 @@ INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/BaiduNetDiskdownload/19
 	Parameter BLACK_B bound to: 8'b00000000 
 WARNING: [Synth 8-6014] Unused sequential element active_x_reg was removed.  [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:187]
 INFO: [Synth 8-6155] done synthesizing module 'color_bar' (6#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/color_bar.v:2]
-INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/rgb2dvi_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (7#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (7#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/rgb2dvi_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/grid_display.v:1]
 INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (8#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/timing_gen_xy.v:1]
@@ -88,13 +88,13 @@ WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  
 INFO: [Synth 8-6155] done synthesizing module 'ad9280_sample' (10#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/ad9280_sample.v:1]
 WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9280_sample' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:179]
 INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/dpram2048x8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (11#1) [E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/.Xil/Vivado-12932-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (11#1) [E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/.Xil/Vivado-18796-Colourful/realtime/dpram2048x8_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'wav_display' (12#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/wav_display.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/src/top.v:1]
 WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 529.977 ; gain = 161.180
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 529.723 ; gain = 161.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -107,10 +107,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 529.977 ; gain = 161.180
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 529.723 ; gain = 161.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 529.977 ; gain = 161.180
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 529.723 ; gain = 161.188
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tfgg484-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -135,25 +135,25 @@ Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd
 Finished Parsing XDC File [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/constrs_1/new/an108_hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.484 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.484 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.707 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 863.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 863.484 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 863.484 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display/buffer' at clock pin 'clkb' is different from the actual clock period '13.474', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 863.484 ; gain = 494.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 863.484 ; gain = 494.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -182,7 +182,7 @@ Applied set_property DONT_TOUCH = true for saw_rom. (constraint file  auto gener
 Applied set_property DONT_TOUCH = true for tri_rom. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for sin_rom. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 863.484 ; gain = 494.949
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
@@ -201,7 +201,7 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ad9280_sample'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 863.707 ; gain = 494.910
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 863.484 ; gain = 494.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -436,7 +436,7 @@ INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[7
 INFO: [Synth 8-3886] merging instance 'wav_display/timing_gen_xy/i_data_d1_reg[8]' (FD) to 'wav_display/timing_gen_xy/i_data_d1_reg[19]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 863.707 ; gain = 494.910
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 863.484 ; gain = 494.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -455,13 +455,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll/clk_out1' to pi
 INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll/clk_out2' to pin 'video_pll/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 863.707 ; gain = 494.910
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 863.484 ; gain = 494.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -473,7 +473,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -497,7 +497,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -510,7 +510,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,25 +522,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -613,27 +613,27 @@ Report Instance Areas:
 |7     |    timing_gen_xy |timing_gen_xy   |    95|
 +------+------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 875.586 ; gain = 173.059
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 875.586 ; gain = 506.789
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 874.812 ; gain = 172.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 874.812 ; gain = 506.277
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 878.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.812 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 167 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 878.020 ; gain = 521.547
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 878.020 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 874.812 ; gain = 518.672
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.812 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 25 23:47:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 26 01:42:37 2022...

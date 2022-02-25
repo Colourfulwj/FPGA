@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Feb 25 21:13:54 2022
-# Process ID: 13368
-# Current directory: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/saw_rom_synth_1
+# Start of session at: Sat Feb 26 01:33:12 2022
+# Process ID: 12552
+# Current directory: E:/Study/vivado_project/new/FPGA/adda_lcd.runs/saw_rom_synth_1
 # Command line: vivado.exe -log saw_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source saw_rom.tcl
-# Log file: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/saw_rom_synth_1/saw_rom.vds
-# Journal file: E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/saw_rom_synth_1\vivado.jou
+# Log file: E:/Study/vivado_project/new/FPGA/adda_lcd.runs/saw_rom_synth_1/saw_rom.vds
+# Journal file: E:/Study/vivado_project/new/FPGA/adda_lcd.runs/saw_rom_synth_1\vivado.jou
 #-----------------------------------------------------------
 source saw_rom.tcl -notrace

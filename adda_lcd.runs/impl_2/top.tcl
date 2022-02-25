@@ -67,18 +67,17 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache E:/BaiduNetDiskdownload/adda_hdmi_test/.Xil/Vivado-11572-Colourful/incrSyn
-  set_param xicom.use_bs_reader 1
+  set_param synth.incrementalSynthesisCache E:/Study/vivado_project/new/FPGA/.Xil/Vivado-14460-Colourful/incrSyn
   create_project -in_memory -part xc7a35tfgg484-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.cache/wt [current_project]
-  set_property parent.project_path E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.xpr [current_project]
-  set_property ip_repo_paths E:/BaiduNetDiskdownload/adda_hdmi_test/repo [current_project]
+  set_property webtalk.parent_dir E:/Study/vivado_project/new/FPGA/adda_lcd.cache/wt [current_project]
+  set_property parent.project_path E:/Study/vivado_project/new/FPGA/adda_lcd.xpr [current_project]
+  set_property ip_repo_paths E:/Study/vivado_project/new/FPGA/repo [current_project]
   update_ip_catalog
   set_property ip_cache_permissions disable [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet E:/BaiduNetDiskdownload/adda_hdmi_test/adda_lcd.runs/synth_2/top.dcp
+  add_files -quiet E:/Study/vivado_project/new/FPGA/adda_lcd.runs/synth_2/top.dcp
   read_ip -quiet E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci
   read_ip -quiet E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
   read_ip -quiet E:/BaiduNetDiskdownload/19_an108_adda_hdmi_test/an108_adda_lcd.srcs/sources_1/ip/adda_pll/adda_pll.xci
@@ -159,25 +158,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  catch { write_mem_info -force top.mmi }
-  write_bitstream -force top.bit 
-  catch {write_debug_probes -quiet -force top}
-  catch {file copy -force top.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
